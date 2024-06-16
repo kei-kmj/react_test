@@ -25,5 +25,3 @@ export const UserProvider: FC<{ children: ReactNode }> = ({children}) => {
     );
 }
 
-// カスタムフックで、コンテキストの値を取得する
-

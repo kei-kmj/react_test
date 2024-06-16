@@ -19,6 +19,7 @@ describe('useFetchDate', () => {
 
         console.log("mockName", mockedAxios.get.getMockName())
         await waitFor(() => {
+            expect(mockedAxios.get).toHaveBeenCalledTimes(1);
             expect(result.current.data).toBe('2021-01-01!!!');
             expect(result.current.loading).toBe(false);
         });
